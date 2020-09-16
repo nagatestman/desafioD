@@ -25,7 +25,7 @@ context('Lojas Americanas', () => {
             cy.get('.passwordWrapper-msg').contains('fraca') //Valida label "fraca"
         })
         
-        it.only('Inserir um CPF inválido e validar a mensagem: "CPF inválido")', () => {
+        it('Inserir um CPF inválido e validar a mensagem: "CPF inválido")', () => {
             cy.get('.usr-icon').click() //Clique no icone 
             cy.get('.usr-signup').click() //Clique em "Cliente novo? Cadastrar"
             cy.get('#email-input').type('jocadadextra@hotmail.com') //Incluir email no campo email
