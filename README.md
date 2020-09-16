@@ -28,16 +28,17 @@ Obs: No framework do Cypress é possivel selecionar outros dois tipos de browser
 Observação
 **********
 
-O site das lojas Americanas (www.americanas.com.br) ao submeter o cadastro de um usuário novo, o reCaptcha do google é apresentado e desta forma, não é possivel executar os testes com sucesso, pois o site é de produção e não temos o controle do mesmo.
+O site das lojas Americanas (www.americanas.com.br) ao submeter o cadastro de um novo usuário, o reCaptcha do google é apresentado e desta forma, não é possivel executar os testes com sucesso, pois o site é de produção e não temos o controle do mesmo.
+O conceito do reCaptcha é para evitar este tipo de serviço feito por robôs/automação. Segurança!
 
-Na fase de desenvolvimeto, há duas possibilitades:
+Na fase de desenvolvimeto, há duas possibilitades para contornar este "problema".
 
-1) Na fase de desenvolvimento/homologação, combinar com o time de Frontend a remover o reCaptcha ou passar um padrão do reCaptcha para que seja utilizado como input nos testes automatizados.
+1) Na fase de desenvolvimento/homologação, combinar com o time de Frontend a remover o reCaptcha ou passar um padrão do reCaptcha para que seja utilizado como input nos testes automatizados (se for possivel).
 
 2) Usar treinamento de Redes Neurais. Isso desprenderia mais tempo e conhecimento do time de testes junto ao time de desenvolvimento para criar um algoritimo inteligente para dar um bypass no reCaptcha.
 
 No desafio, há 4 casos de testes automatizados, mas apenas o segundo teste que é executado com sucesso, pois não faz a ação de clicar no botão de "submit" do formulário que chama o reCaptcha.
-Desta forma, o teste ultimo teste não consegui validar os asserts finais nas linhas 52 a 60. Fiz o script de forma que acho que é o correto!
+Desta forma, o último teste não consegui validar os asserts finais nas linhas 52 a 60. Fiz o script de forma que acho que é o correto!
 
 Atenciosamente,
 Renato
